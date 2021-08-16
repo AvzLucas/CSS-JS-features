@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+}
+h1{
+  width:max-content;
+  padding:10px;
+  position:relative;
+  font-family:"Source Code Pro", monospace;
+}
+h1::before{
+  content:'';
+  position:absolute;
+  padding:10px;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background:white;
+  border-left: 2px solid;
+  animation: type 4s steps(37) 1s forwards, blink 800ms infinite;
+}
+@keyframes type {
+  to{
+    left:100%;
+  }
+}
+@keyframes blink{
+  to{
+    border-left-color:transparent;
+  }
+}
