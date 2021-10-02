@@ -1,0 +1,36 @@
+html{
+    width:100vw;
+    height:100vh;
+}
+.container{
+    width:25em;
+    height:25em;
+    position: relative;
+    margin: auto;
+    border:1px solid black;
+    perspective: 500px;
+}
+.square{
+    width:80px;
+    height: 80px;
+    background-color: rgb(199, 96, 96);
+    position:absolute;
+}
+.squareone{
+    top:95px;
+    transform: rotateX(.1turn);
+    box-shadow: 0  5px 10px rgb(53, 48, 48);
+}
+.squaretwo{
+    top:195px;
+    transform:skew(25deg,5deg);
+    box-shadow:8px 0 10px gray;
+}
+.ball{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    background:chocolate;
+    position: absolute;
+    right:0;
+}
